@@ -9,8 +9,8 @@ header = {
 }
 
 
-fp = open("names.txt", "r")
-
+# fp = open("names.txt", "r") Uncomment to download from a list. 
+fp = input("Enter the username: ")
 for cnt, line in enumerate(fp):
     new = str(line.strip())
     url = "https://www.instagram.com/"+new+"/?__a=1"
